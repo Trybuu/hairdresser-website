@@ -76,6 +76,10 @@ nav {
 //hero
 .hero {
     height: 50vh;
+    background: url(/img/hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     .contact {
         width: 40%;
