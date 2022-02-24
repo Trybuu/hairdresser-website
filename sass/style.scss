@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato&display=swap');
+
 // variables
-$main-color: #222;
-$second-color: #FFA3DF;
-$darker-second-color: #D46CBA;
+$main-color: #fff;
+$second-color: #C298A0;
+$darker-second-color: #a87d85;
 
 // reset
 * {
@@ -35,58 +36,120 @@ body {
     background-color: $main-color;
 }
 
+.title {
+    font-family: 'Dancing Script', cursive;
+    color: $second-color;
+}
+
+.subtitle {
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    color: $second-color;
+}
+
+.text {
+    font-family: 'lato', sans-serif;
+    color: #333;
+    text-align: justify;
+
+}
+
+.bg {
+    font-size: 3.5rem;
+}
+
 .pdx-1 {
     padding: 0 1rem;
 }
 
 // header
+.header {
+    .logo {
+        width: 4rem;
+        height: 4rem;
+        margin-top: 2rem;
+        border: 3px solid $second-color;
+        border-radius: 50%;
+    }
 
-.logo {
-    width: 4rem;
-    height: 4rem;
-    margin-top: 2rem;
-    border: 3px solid $second-color;
-    border-radius: 50%;
-}
 
+    nav {
+        ul {
+            list-style: none;
 
-nav {
-    ul {
-        list-style: none;
+            li {
+                padding: 2rem 1rem;
+            }
 
-        li {
-            padding: 2rem 1rem;
-        }
+            a {
+                color: $second-color;
+                text-decoration: none;
 
-        a {
-            color: $second-color;
-            text-decoration: none;
-            text-shadow: 0 0 3px black;
-            padding: 1rem 0;
-            transition: .1s ease-in border-bottom;
+                padding: 1rem 0;
+                transition: .1s ease-in border-bottom;
 
-            &:hover {
-                color: #D46CBA;
-                border-bottom: 3px solid $darker-second-color;
+                &:hover {
+                    color: $darker-second-color;
+                    border-bottom: 3px solid $darker-second-color;
+                }
             }
         }
     }
 }
 
+
 //hero
 .hero {
     height: 50vh;
-    background: url(/img/hero.jpeg);
+    background: url(/img/hero.jpg); //https://unsplash.com/photos/4nulm-JUYFo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 
     .contact {
+        position: absolute;
         width: 40%;
-        background-color: pink;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        background-color: rgba(255, 163, 223, 0.5);
+        border-radius: 5px;
 
         * {
             width: 100%;
+            margin: 0.5rem;
         }
+
+        display: none;
+    }
+
+    h1.title {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 110%;
+        left: 0;
+    }
+
+}
+
+//about
+.about {
+    position: relative;
+    margin-top: 10rem;
+
+    .img {
+        background-color: #333;
+        height: 30vh;
+        width: 100%;
+        background: url(/img/benyamin-bohlouli-LGXN4OSQSa4-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        margin: 1rem 0;
     }
 }
