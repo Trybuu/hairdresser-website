@@ -1,17 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+// variables
+$main-color: #222;
+$second-color: #FFA3DF;
+$darker-second-color: #D46CBA;
+
+// reset
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+// basic utilities
 body {
+    font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+}
 
-    .container {
-        >.wrapper {
-            height: 100vh;
-            width: 100vw;
-            background-color: #fff;
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    color: $main-color;
+}
+
+.wrapper:first-child {
+    color: $second-color;
+    background-color: $main-color;
+}
+
+.pdx-1 {
+    padding: 0 1rem;
+}
+
+// header
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 2rem;
+    border: 3px solid $second-color;
+    border-radius: 50%;
+}
+
+
+nav {
+    ul {
+        list-style: none;
+
+        li {
+            padding: 2rem 1rem;
+        }
+
+        a {
+            color: $second-color;
+            text-decoration: none;
+            text-shadow: 0 0 3px black;
+            padding: 1rem 0;
+            transition: .1s ease-in border-bottom;
+
+            &:hover {
+                color: #D46CBA;
+                border-bottom: 3px solid $darker-second-color;
+            }
+        }
+    }
+}
+
+//hero
+.hero {
+    height: 50vh;
+
+    .contact {
+        width: 40%;
+        background-color: pink;
+
+        * {
+            width: 100%;
         }
     }
 }
