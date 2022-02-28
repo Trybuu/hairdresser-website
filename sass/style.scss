@@ -228,6 +228,19 @@ body {
         box-shadow: 0 0 5px #333;
         margin: 1rem 0;
     }
+
+    .about-img {
+        background: url(/img/michael-dagonakis-SPuo9KOWCJs-unsplash.jpg); //Photo by Michael Dagonakis on Unsplash
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        width: 30vh;
+        height: 30vh;
+        margin: 1rem;
+        box-shadow: 0 0 5px #333;
+        border-radius: 50%;
+    }
 }
 
 //galerry
@@ -238,6 +251,10 @@ body {
 
         @media(min-width: 600px) {
             flex: 1 1 50%;
+        }
+
+        @media(min-width: 1440px) {
+            flex: 1 1 33.3%;
         }
 
         .gallery-img {
