@@ -54,11 +54,24 @@ body {
     font-family: 'lato', sans-serif;
     color: #333;
     text-align: justify;
+}
 
+.text-footer {
+    font-size: 0.8rem;
+    text-align: center;
+    color: rgb(241, 241, 241);
+
+    @media(min-width: 400px) {
+        font-size: 1rem;
+    }
 }
 
 .bg {
     font-size: 3.5rem;
+
+    @media(min-height: 375px) {
+        font-size: 1.5rem;
+    }
 }
 
 .pdx-1 {
@@ -74,11 +87,18 @@ body {
     .logo {
         width: 4rem;
         height: 4rem;
-        margin-top: 2rem;
+        margin: 1rem;
         border: 3px solid $second-color;
         border-radius: 50%;
         text-align: center;
-        line-height: 3.5rem;
+        line-height: 4rem;
+
+        @media(min-width: 400px) {
+            width: 5rem;
+            height: 5rem;
+            margin: 1.5rem;
+            line-height: 5rem;
+        }
     }
 
 
@@ -100,6 +120,10 @@ body {
                 &:hover {
                     color: $darker-second-color;
                     border-bottom: 3px solid $darker-second-color;
+                }
+
+                @media(min-width: 400px) {
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -198,11 +222,7 @@ body {
     background-color: #333;
     padding: 1rem;
 
-    .text {
-        font-size: 0.8rem;
-        text-align: center;
-        color: rgb(241, 241, 241);
-    }
+
 
 
 
